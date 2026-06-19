@@ -1,6 +1,8 @@
 console.log((4+9+6)/77);
-let a= 10;
-a=12;
+//var a= 10;
+a =12;
+const a =9;
+
 console.log(a);
 let b = 7*a;
 console.log(b);
