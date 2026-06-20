@@ -12,4 +12,5 @@ a =12;
 // console.log(percentage);
 let str = 'Hello,';
 let str1 ="World";
-console.log (`${str} ${str1}`);
+console.log (`${str} ${str1}`); 
+console.log(str.length);
