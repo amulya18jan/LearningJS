@@ -50,3 +50,16 @@ console.log(str6.length);
 console.log(str6.endsWith("dog",36));
 console.log("String Concat");
 console.log(str6.concat(", ", str5));
+console.log("String method repeat()");
+let str7 = "abc";
+console.log(str7.repeat(3));
+// console.log(str7.repeat(-1));
+console.log("Learning trim(), trimStart(), trimEnd() methods of Strings");
+let str8 = "    Hello Amulya     ";
+let greetings = str8.trim();
+console.log (str8)
+console.log(greetings);
+let TrimStart = str8.trimStart();
+console.log(TrimStart);
+let TrimEnd = str8.trimEnd();
+console.log(TrimEnd);
