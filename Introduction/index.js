@@ -37,4 +37,8 @@ console.log(str5.split());
 console.log(str5.split(""));
 console.log(str5.split(" "));
 console.log(str5.split("o"));
-console.log(str5.split("upon",2))
+console.log(str5.split("upon",2));
+console.log("Learning string include method");
+let str6 ="The quick brown fox jumps over the dog";
+console.log(str6.includes("fox"));
+console.log(str6.includes("fox", 16));
