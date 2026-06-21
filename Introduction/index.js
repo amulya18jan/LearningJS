@@ -30,3 +30,11 @@ let str5 ="The morning is upon us!";
 console.log(str5.length);
 console.log(str5.slice(4,6));
 console.log(str5.substring(24,1));
+console.log(str5.slice(8,-4));
+console.log(str5.substring(8,-4));
+console.log("String split");
+console.log(str5.split());
+console.log(str5.split(""));
+console.log(str5.split(" "));
+console.log(str5.split("o"));
+console.log(str5.split("upon",2))
