@@ -99,3 +99,40 @@ console.log([...res]);
 console.log([...res1]);
 //console.log([...res2]);
 console.log([...res3]);
+const amulya = {
+  role:       "Full Stack Developer",
+  strengths:  ["Data Structures", "Databases", "Java"],
+  learning:   ["Node.js", "Express.js", "React.js"],
+  askMeAbout: ["Java", "Databases", "DSA", "Web Dev"],
+  funFact:    "I can sing really well 🎙️",
+  contact:    "amulyaawasth18jan@gmail.com"
+};
+console.log(amulya.strengths);
+console.log("Learning replace() method in String");
+let str16 = "Mr.Blue have blue house and blue car";
+let Rep = str16.replace('blue', 'red');
+console.log(Rep);
+let rep1 =str16.replace("blue",(match)=>{
+    return match.toUpperCase();
+});
+console.log(rep1);
+console.log("------Learning replace method from regexp--------");
+let REG =str16.replace(/blue/g, 'red');
+console.log(REG);
+let REG1 =str16.replace(/blue/gi, 'red');
+console.log(REG1);
+let REG2 =str16.replace(/Blue/g, 'Red');
+console.log(REG2);
+let REG3 =REG2.replace(/blue/g, 'red');
+console.log(REG3);
+console.log('-------------Learning from Regexp function-----------');
+// let Reg4 = str16.replace(/blue/gi, (match)=>{
+// match[0] === 'B' ? "Red" :'red';
+// });
+// console.log(Reg4);
+let result = str16.replace(/blue/gi, match =>
+  match[0] === "B" ? "Red" : "red"
+);
+
+console.log(result);
+
