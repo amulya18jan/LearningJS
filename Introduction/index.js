@@ -57,7 +57,7 @@ console.log(str7.repeat(3));
 console.log("Learning trim(), trimStart(), trimEnd() methods of Strings");
 let str8 = "    Hello Amulya     ";
 let greetings = str8.trim();
-console.log (str8)
+console.log (str8);
 console.log(greetings);
 let TrimStart = str8.trimStart();
 console.log(TrimStart);
