@@ -123,6 +123,54 @@ Not equals: In maths the notation is ≠, but in JavaScript it’s written as a 
 ________________________________________________________________________________________________________________
 Q12. What are truthy and falsy values?
 A12. A number 0, an empty string "", null, undefined, and NaN all become false. Because of that they are called “falsy” values.
+Other values become true, so they are called “truthy”.
+So, the code under this condition would never execute:
+
+if (0) { // 0 is falsy
+  ...
+}
+…and inside this condition – it always will:
+
+if (1) { // 1 is truthy
+  ...
+}
+We can also pass a pre-evaluated boolean value to if, like this:
+
+let cond = (year == 2015); // equality evaluates to true or false
+
+if (cond) {
+  ...
+}
 ________________________________________________________________________________________________________________
-Q13. 
+Q13. What is the syntax for an if/else conditional? 
+A13.  Basic if...else syntax looks like this:
+
+js
+
+if (condition) {
+  /* code to run if condition is true */
+} else {
+  /* run some other code instead */
+}
+________________________________________________________________________________________________________________
+Q14. What is the syntax for a switch statement?
+A14. switch (expression) {
+  case choice1:
+    // run this code
+    break;
+
+  case choice2:
+    // run this code instead
+    break;
+
+  // include as many cases as you like
+
+  default:
+    // actually, just run this code
+    break;
+}
+________________________________________________________________________________________________________________
+
+Q15. What is the syntax for a ternary operator?
+A15. condition ? run this code : run this code instead
 
