@@ -1,0 +1,128 @@
+Q1. What are the eight data types in JavaScript?
+Ans1. the eight types of data types in JavaScript are :- 
+There are 8 basic data types in JavaScript.
+
+Seven primitive data types:
+1.number for numbers of any kind: integer or floating-point, integers are limited by ±(253-1).
+2.bigint for integer numbers of arbitrary length.
+3.string for strings. A string may have zero or more characters, there’s no separate single-character type.
+4.boolean for true/false.
+5.null for unknown values – a standalone type that has a single value null.
+6.undefined for unassigned values – a standalone type that has a single value undefined.
+7.symbol for unique identifiers.
+----------------------------------------------------------------------------------------------------------------
+And one non-primitive data type:
+object for more complex data structures.
+________________________________________________________________________________________________________________
+
+Q2.Which data type is NOT primitive?
+Ans2. The data type which is NOT primitive is object for more complex data structure.
+________________________________________________________________________________________________________________
+Q3. What is the relationship between null and undefined?
+A3. 
+--------------------------------null----------------------------------------------------------------------------
+let age = null;
+In JavaScript, null is not a “reference to a non-existing object” or a “null pointer” like in some other languages.
+
+It’s just a special value which represents “nothing”, “empty” or “value unknown”.
+
+The code above states that age is unknown.
+--------------------------------undefined-----------------------------------------------------------------------
+The special value undefined also stands apart. It makes a type of its own, just like null.
+
+The meaning of undefined is “value is not assigned”.
+
+If a variable is declared, but not assigned, then its value is undefined:
+
+let age;
+
+alert(age); // shows "undefined"
+Technically, it is possible to explicitly assign undefined to a variable:
+
+let age = 100;
+
+// change the value to undefined
+age = undefined;
+
+alert(age); // "undefined"
+…But we don’t recommend doing that. Normally, one uses null to assign an “empty” or “unknown” value to a variable, while undefined is reserved as a default initial value for unassigned things.
+________________________________________________________________________________________________________________
+Q4.What is the difference between single, double, and backtick quotes for strings?
+A4. Single quotes, double quotes, and backticks
+In JavaScript, you can choose single quotes ('), double quotes ("), or backticks (`) to wrap your strings in. All of the following will work:
+
+js
+
+const single = 'Single quotes';
+const double = "Double quotes";
+const backtick = `Backtick`;
+
+console.log(single);
+console.log(double);
+console.log(backtick);
+You must use the same character for the start and end of a string, or you will get an error:
+
+js
+const badQuotes = 'This is not allowed!";
+Strings declared using single quotes and strings declared using double quotes are the same, and which you use is down to personal preference — although it is good practice to choose one style and use it consistently in your code.
+
+Strings declared using backticks are a special kind of string called a template literal. Template literals mostly behave the same as normal strings, but they have some special properties:
+
+You can embed JavaScript in them.
+You can declare template literals over multiple lines.
+
+________________________________________________________________________________________________________________
+Q5.What is the term for joining strings together?
+A5. Joining two string together is called concatination.
+________________________________________________________________________________________________________________
+Q6.Which type of quote lets you embed variables/expressions in a string?
+A6.`Backtick` type of quote lets us embed variables/expressions in a string.
+________________________________________________________________________________________________________________
+Q7. How do you embed variables/expressions in a string?
+A7. Inside a template literal, you can wrap JavaScript variables or expressions inside ${ }, and the result will be included in the string:
+
+js
+
+const name = "Chris";
+const greeting = `Hello, ${name}`;
+console.log(greeting); // "Hello, Chris"
+You can use the same technique to join together two variables:
+
+js
+
+const one = "Hello, ";
+const two = "how are you?";
+const joined = `${one}${two}`;
+console.log(joined); // "Hello, how are you?"
+________________________________________________________________________________________________________________
+Q8.How do you use escape characters in a string?
+A8.Escaping characters means that we do something to them to make sure they are recognized as text, not part of the code. In JavaScript, we do this by putting a backslash just before the character. Try this:
+
+js
+const bigmouth = 'I\'ve got no right to take my place…';
+console.log(bigmouth);
+________________________________________________________________________________________________________________
+Q9. What is the difference between the slice/substring string methods?
+A9. | Feature                     | `slice()` | `substring()`    |
+| --------------------------- | --------- | ---------------- |
+| Positive indexes            | ✅         | ✅                |
+| Negative indexes            | ✅         | ❌ (treated as 0) |
+| Swaps start/end if reversed | ❌         | ✅                |
+| Works on arrays too         | ✅         | ❌                |
+| Generally preferred         | ✅         | Less common      |
+________________________________________________________________________________________________________________
+Q10. What are the three logical operators, and what do they stand for?
+A10. There are four logical operators in JavaScript: || (OR), && (AND), ! (NOT), 
+Although they are called “logical”, they can be applied to values of any type, not only boolean. Their result can also be of any type.
+_______________________________________________________________________________________________________________
+Q11. What are the comparison operators?
+A11. Greater/less than: a > b, a < b.
+Greater/less than or equals: a >= b, a <= b.
+Equals: a == b, please note the double equality sign == means the equality test, while a single one a = b means an assignment.
+Not equals: In maths the notation is ≠, but in JavaScript it’s written as a != b.
+________________________________________________________________________________________________________________
+Q12. What are truthy and falsy values?
+A12. A number 0, an empty string "", null, undefined, and NaN all become false. Because of that they are called “falsy” values.
+________________________________________________________________________________________________________________
+Q13. 
+
