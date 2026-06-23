@@ -33,3 +33,9 @@ function infiNum(a, ...b){
 }
 infiNum(2,4,8,10,11,12,13,14,15,16,17,20,34,86);
 console.log("One thing please keep in mind we represent rest parameter in the function with ... sign before the parameter name and it will apply only on one parameter which is at the last.");
+console.log("___________________________________________________________________________________");
+console.log("Learning Arrow Function in JS");
+const multi =(a, b) => a*b;
+console.log(multi(13,13));
+let divide=(x,y) => x/y;
+console.log(divide(10,2));
