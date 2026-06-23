@@ -26,3 +26,9 @@ console.log(DEF(10,10));
 console.log("Giving only one parameters");
 console.log(DEF(10));
 console.log("______________________________________________________________________");
+console.log("Learning Rest parameter Function");
+function infiNum(a, ...b){
+    console.log(a);
+    console.log(b);
+}
+infiNum(2,4,8,10,11,12,13,14,15,16,17,20,34,86);
