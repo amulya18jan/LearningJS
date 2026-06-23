@@ -39,3 +39,22 @@ const multi =(a, b) => a*b;
 console.log(multi(13,13));
 let divide=(x,y) => x/y;
 console.log(divide(10,2));
+console.log("___________________________________________________________________________________");
+console.log("Learning Nesting Function in JS");
+function calculator (x,y){
+console.log(`My numbers are ${x},${y}`);
+function add(a,b){
+return a+b;
+}
+function multiply(a,b){
+return a*b;
+}
+function division(a,b){
+return a/b;
+}
+function modulus(a,b){
+return b%a;
+}
+return [add(x,y), multiply(x,y),division(x,y),modulus(x,y)];
+}
+console.log(calculator(10,20));
