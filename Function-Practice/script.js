@@ -17,5 +17,5 @@ console.log("The odin project fourth questions");
 function lastLetter (str){
     return str.charAt(str.length-1);
 }
-console.log(lastLetter("Let/'s gi"));
+console.log(lastLetter("Let/'s go"));
 
