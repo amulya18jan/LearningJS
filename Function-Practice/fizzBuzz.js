@@ -1,16 +1,18 @@
 console.log("Welcome to the FizzBuzz Game");
-function fizzBuzz(num){
-   if(num%3==0&&num%5==0){
-        return "FizzBuzz";
-    }else if(num%5 == 0){
-     return "Buzz";
-    }else if(num%3==0){
-      return "Fizz"
-    }else{
-        return "Please try again";
+let answer = parseInt(
+  prompt("Please enter the number you would like to FizzBuzz upto :  "),
+);
+function fizzBuzz() {
+  for (let i = 1; i <= answer; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+      console.log("FizzBuzz");
+    } else if (i % 5 == 0) {
+      console.log("Buzz");
+    } else if (i % 3 == 0) {
+      console.log("Fizz");
+    } else {
+      console.log(i);
     }
+  }
 }
-console.log(fizzBuzz(12));
-console.log(fizzBuzz(10));
-console.log(fizzBuzz(15));
-console.log(fizzBuzz(7));
+console.log(fizzBuzz());
