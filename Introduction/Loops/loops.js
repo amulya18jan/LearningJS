@@ -9,11 +9,18 @@ console.log("Table of any number");
 //     let result = num * i;
 //     console.log(`${num}*${i} = ${result}`);
 // }
-let num =15;
-let i =1;
-while(i<=20){
-    let result = num * i;
-    console.log(result);
+
+// let num =15;
+// let i =1;
+// while(i<=20){
+//     let result = num * i;
+//     console.log(result);
+//     i++;
+// }
+let i=0;
+do{
+    console.log(i);
     i++;
-}
+}while(i<10);
+
 
