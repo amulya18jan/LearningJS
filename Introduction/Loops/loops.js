@@ -17,11 +17,11 @@ console.log("Table of any number");
 //     console.log(result);
 //     i++;
 // }
-// let i=0;
-// do{
-//     console.log(i);
-//     i++;
-// }while(i<10);
+let i=0;
+do{
+    console.log(i);
+    i++;
+}while(i<10);
 let str = "Amulya Awasthi";
 let length = 0;
 for(val of str){
@@ -29,5 +29,10 @@ for(val of str){
     length++;
 }
 console.log(length);
+let x =1;
+switch(x){
+    case("AMULYA");
+    break;
+}
 
 
