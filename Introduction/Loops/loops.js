@@ -31,8 +31,12 @@ for(val of str){
 console.log(length);
 let x =1;
 switch(x){
-    case("AMULYA");
+    case "AMULYA" :
     break;
 }
+
+// if(x==="Amulua"){
+
+// }
 
 
