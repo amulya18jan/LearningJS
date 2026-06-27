@@ -29,14 +29,5 @@ for(val of str){
     length++;
 }
 console.log(length);
-let x =1;
-switch(x){
-    case "AMULYA" :
-    break;
-}
-
-// if(x==="Amulua"){
-
-// }
 
 
