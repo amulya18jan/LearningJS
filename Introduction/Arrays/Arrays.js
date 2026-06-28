@@ -49,21 +49,17 @@
 // })
 console.log("______________________________________________________________________");
 console.log(("Learning map() and solving questions"));
-
 console.log("1. Double every number");
 const numbers = [1, 2, 3, 4, 5];
-const multiple2=numbers.map((num)=>{
- return num*2;
-    
-})
+const multiple2=numbers.map((num)=>num*2)
 console.log(multiple2);
-
 console.log("______________________________________________________________________");
-
 console.log("2. Convert to uppercase");
 const names = ["john", "alice", "bob"];
-const upperCaseNames= names.map((upperCase)=>{
-    return upperCase.toUpperCase();
-    
-})
+const upperCaseNames= names.map((upperCase)=> upperCase.toUpperCase())
 console.log(upperCaseNames);
+console.log("______________________________________________________________________");
+console.log(("3. Add 5 to every number"));
+const marks = [60, 70, 80, 90];
+const updatedMarks = marks.map((Marks)=>Marks+5)
+console.log(updatedMarks);
