@@ -16,3 +16,13 @@ const numbers = [2, 4, 6, 8];
 const squares = numbers.forEach((sqr)=>{
     console.log(sqr*sqr);
 })
+console.log("3. Print even and odd");
+const number1 = [1, 2, 3, 4, 5, 6];
+const evenAndOdd = number1.forEach((num) => {
+    if(num %2 == 0){
+        console.log("Even Numbers :"+" "+ num);
+    
+    }else{
+        console.log("Odd"+ " "+ num);
+    }
+})
