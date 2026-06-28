@@ -40,15 +40,24 @@
 //     }
 // }
 
-console.log("Create a game where you start with any random game number.Ask the user to keep guessing the game number until the user enter the correct number");
-let num = Math.floor(Math.random()*11);
-function guessTheNumber(){
-let humanChoice =parseInt(prompt("Select any number between 1 to 10 :"));
-if(humanChoice===num){
-    console.log("you won the game");
-}else{
-    console.log("try again");
-    guessTheNumber();
-}
-}
-console.log(guessTheNumber());
+// console.log("Create a game where you start with any random game number.Ask the user to keep guessing the game number until the user enter the correct number");
+// let num = Math.floor(Math.random()*11);
+// function guessTheNumber(){
+// let humanChoice =parseInt(prompt("Select any number between 1 to 10 :"));
+// if(humanChoice===num){
+//     console.log("you won the game");
+// }else{
+//     console.log("try again");
+//     guessTheNumber();
+// }
+// }
+// guessTheNumber();
+  console.log("Solving this question using while loop");
+  let humanChoice =parseInt(prompt("Select any number between 1 to 10 :"));
+  let num = Math.floor(Math.random()*11);
+
+  while (humanChoice !== num) {
+    console.log("Try Again");
+     humanChoice =parseInt(prompt("Select any number between 1 to 10 :"));
+  }
+console.log("You won the game");
