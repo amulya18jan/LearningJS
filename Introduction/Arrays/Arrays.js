@@ -37,3 +37,13 @@ const sum = add.forEach((addAll)=>{
     
 })
 console.log(result);
+console.log("______________________________________________________________________");
+console.log("5. Print student information");
+const students = [
+    { name: "John", age: 20 },
+    { name: "Alice", age: 22 },
+    { name: "Bob", age: 19 }
+];
+const print = students.forEach((items)=>{
+    console.log(`${items.name} is ${items.age} old`);
+})
