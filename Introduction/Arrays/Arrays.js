@@ -63,3 +63,12 @@ console.log(("3. Add 5 to every number"));
 const marks = [60, 70, 80, 90];
 const updatedMarks = marks.map((Marks)=>Marks+5)
 console.log(updatedMarks);
+console.log("______________________________________________________________________");
+console.log(("4. Extract names"));
+const users = [
+    { name: "John", age: 25 },
+    { name: "Alice", age: 30 },
+    { name: "Bob", age: 22 }
+];
+const Names = users.map((naam)=>naam.name);
+console.log(Names);
