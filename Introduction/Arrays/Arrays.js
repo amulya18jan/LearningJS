@@ -72,3 +72,5 @@ const users = [
 ];
 const Names = users.map((naam)=>naam.name);
 console.log(Names);
+console.log("______________________________________________________________________");
+console.log(("5. Create a new object"));
