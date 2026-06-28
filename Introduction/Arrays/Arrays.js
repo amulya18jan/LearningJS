@@ -11,11 +11,13 @@
 console.log("1. Print all fruits using forEach()");
 const fruits = ["Apple", "Banana", "Mango", "Orange"];
 const fruits1 = fruits.forEach((items)=>{console.log(items)})
+console.log("______________________________________________________________________");
 console.log("2. Print squares using forEach()");
 const numbers = [2, 4, 6, 8];
 const squares = numbers.forEach((sqr)=>{
     console.log(sqr*sqr);
 })
+console.log("______________________________________________________________________");
 console.log("3. Print even and odd");
 const number1 = [1, 2, 3, 4, 5, 6];
 const evenAndOdd = number1.forEach((num) => {
@@ -26,3 +28,12 @@ const evenAndOdd = number1.forEach((num) => {
         console.log("Odd"+ " "+ num);
     }
 })
+console.log("______________________________________________________________________");
+console.log("4. Calculate total sum");
+const add =[10, 20, 30, 40];
+let result =0;
+const sum = add.forEach((addAll)=>{
+    result += addAll;
+    
+})
+console.log(result);
