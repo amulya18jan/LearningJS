@@ -80,7 +80,7 @@ console.log(adults);
 console.log("______________________________________________________________________");
 console.log(("Practice Question 2"));
 const names = ["Ram","Alexander","John","Amit"];
-const  filterNames = names.filter((name)=>name.length<=4)
+const  filterNames = names.filter((name)=>name.length>4)
 console.log(filterNames);
 console.log("______________________________________________________________________");
 console.log(("Mini Challenge"));
@@ -140,4 +140,4 @@ const words = ["Java", "Script", "React"];
 const lengthWords = words.reduce((acc, wor)=>{
     return wor.length +acc;
 },0)
-console.log(lengthWords)
+console.log(lengthWords);
