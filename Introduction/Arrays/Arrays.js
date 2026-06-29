@@ -72,72 +72,91 @@
 // ];
 // const Names = users.map((naam)=>naam.name);
 // console.log(Names);
- console.log("______________________________________________________________________");
- console.log(("Practice Question 1"));
-const ages = [12,18,25,10,30];
-const adults = ages.filter((age)=>age>=18);
-console.log(adults);
-console.log("______________________________________________________________________");
-console.log(("Practice Question 2"));
-const names = ["Ram","Alexander","John","Amit"];
-const  filterNames = names.filter((name)=>name.length>4)
-console.log(filterNames);
-console.log("______________________________________________________________________");
-console.log(("Mini Challenge"));
-console.log("1. Use filter() to keep only odd numbers.");
-const nums = [3, 8, 5, 12, 7, 10];
-const oddNums = nums.filter((num)=>num%2 !== 0);
-console.log(oddNums);
-console.log("______________________________________________________________________");
-console.log("2.Use filter() to keep only products that cost more than 1000.");
-const products = [
-  { name: "Mouse", price: 500 },
-  { name: "Keyboard", price: 1200 },
-  { name: "Monitor", price: 8000 },
-  { name: "Pen", price: 50 }
-];
-const filterProducts = products.filter((prod)=>prod.price > 1000)
-console.log(filterProducts);
-console.log("______________________________________________________________________");
-console.log("3.Use reduce() to calculate the total marks.");
-const marks = [78, 85, 92, 65];
-const totalMarks = marks.reduce((acc ,mark)=>{
- return  acc + mark;
-},0)
-console.log(totalMarks);
-console.log("______________________________________________________________________");
-console.log("Multiply everything");
-const Nums=[2,3,4];
-const MultiplyEverthing = Nums.reduce((acc,num)=>{
-  return num *acc;
-},1)
-console.log(MultiplyEverthing);
-console.log("______________________________________________________________________");
-console.log("Find the largest number");
-const numbers =[10,40,25,80,50];;
-const largest = numbers.reduce((acc, larg)=>{
-    if(larg>acc){
-        return  larg;
-    }else{
-       return acc
-    } ;
-},numbers[0])
-console.log(largest);
-console.log("______________________________________________________________________");
-console.log("Sum object values");
+//  console.log("______________________________________________________________________");
+//  console.log(("Practice Question 1"));
+// const ages = [12,18,25,10,30];
+// const adults = ages.filter((age)=>age>=18);
+// console.log(adults);
+// console.log("______________________________________________________________________");
+// console.log(("Practice Question 2"));
+// const names = ["Ram","Alexander","John","Amit"];
+// const  filterNames = names.filter((name)=>name.length>4)
+// console.log(filterNames);
+// console.log("______________________________________________________________________");
+// console.log(("Mini Challenge"));
+// console.log("1. Use filter() to keep only odd numbers.");
+// const nums = [3, 8, 5, 12, 7, 10];
+// const oddNums = nums.filter((num)=>num%2 !== 0);
+// console.log(oddNums);
+// console.log("______________________________________________________________________");
+// console.log("2.Use filter() to keep only products that cost more than 1000.");
+// const products = [
+//   { name: "Mouse", price: 500 },
+//   { name: "Keyboard", price: 1200 },
+//   { name: "Monitor", price: 8000 },
+//   { name: "Pen", price: 50 }
+// ];
+// const filterProducts = products.filter((prod)=>prod.price > 1000)
+// console.log(filterProducts);
+// console.log("______________________________________________________________________");
+// console.log("3.Use reduce() to calculate the total marks.");
+// const marks = [78, 85, 92, 65];
+// const totalMarks = marks.reduce((acc ,mark)=>{
+//  return  acc + mark;
+// },0)
+// console.log(totalMarks);
+// console.log("______________________________________________________________________");
+// console.log("Multiply everything");
+// const Nums=[2,3,4];
+// const MultiplyEverthing = Nums.reduce((acc,num)=>{
+//   return num *acc;
+// },1)
+// console.log(MultiplyEverthing);
+// console.log("______________________________________________________________________");
+// console.log("Find the largest number");
+// const numbers =[10,40,25,80,50];;
+// const largest = numbers.reduce((acc, larg)=>{
+//     if(larg>acc){
+//         return  larg;
+//     }else{
+//        return acc
+//     } ;
+// },numbers[0])
+// console.log(largest);
+// console.log("______________________________________________________________________");
+// console.log("Sum object values");
+// const employees = [
+//     {name:"A",salary:30000},
+//     {name:"B",salary:25000},
+//     {name:"C",salary:40000}
+// ];
+// const totalSalary = employees.reduce((acc,sum)=>{
+//     return sum.salary + acc  
+// },0)
+// console.log(totalSalary)
+// console.log("______________________________________________________________________");
+// console.log("Use reduce() to count the total number of characters in these words.");
+// const words = ["Java", "Script", "React"];
+// const lengthWords = words.reduce((acc, wor)=>{
+//     return wor.length +acc;
+// },0)
+// console.log(lengthWords);
+// console.log("______________________________________________________________________");
+// console.log("Understanding Channing using filter(), map(), reduce()");
+// const employees = [
+//     {name:"A", salary:20000},
+//     {name:"B", salary:50000},
+//     {name:"C", salary:70000},
+//     {name:"D", salary:15000}
+// ];
+// const totalSalary = employees.filter(emp=>emp.salary>30000).map(emp=>emp.salary).reduce((acc, salar)=>{return salar+acc},0)
+// console.log(totalSalary);
 const employees = [
-    {name:"A",salary:30000},
-    {name:"B",salary:25000},
-    {name:"C",salary:40000}
+    { name: "A", salary: 20000, active: true },
+    { name: "B", salary: 50000, active: true },
+    { name: "C", salary: 70000, active: false },
+    { name: "D", salary: 45000, active: true },
+    { name: "E", salary: 15000, active: false }
 ];
-const totalSalary = employees.reduce((acc,sum)=>{
-    return sum.salary + acc  
-},0)
-console.log(totalSalary)
-console.log("______________________________________________________________________");
-console.log("Use reduce() to count the total number of characters in these words.");
-const words = ["Java", "Script", "React"];
-const lengthWords = words.reduce((acc, wor)=>{
-    return wor.length +acc;
-},0)
-console.log(lengthWords);
+const activeEmplyoee = employees.filter(act => act.active == true && act.salary >30000).map(names=>names.name).join(",");
+console.log(activeEmplyoee)
