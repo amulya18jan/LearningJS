@@ -151,14 +151,24 @@
 // ];
 // const totalSalary = employees.filter(emp=>emp.salary>30000).map(emp=>emp.salary).reduce((acc, salar)=>{return salar+acc},0)
 // console.log(totalSalary);
-const employees = [
-    { name: "A", salary: 20000, active: true },
-    { name: "B", salary: 50000, active: true },
-    { name: "C", salary: 70000, active: false },
-    { name: "D", salary: 45000, active: true },
-    { name: "E", salary: 15000, active: false }
-];
-const Names = users.map((naam)=>naam.name);
-console.log(Names);
+// const employees = [
+//     { name: "A", salary: 20000, active: true },
+//     { name: "B", salary: 50000, active: true },
+//     { name: "C", salary: 70000, active: false },
+//     { name: "D", salary: 45000, active: true },
+//     { name: "E", salary: 15000, active: false }
+// ];
+// const Names = users.map((naam)=>naam.name);
+// console.log(Names);
 console.log("______________________________________________________________________");
-console.log(("5. Create a new object"));
+console.log((" Write the function camelize(str) that changes dash-separated words like “my-short-string” into camel-cased “myShortString”."));
+const Words = (str)=>{
+    const camelCase = str.split(/[-_\s]+/).map((word, index)=>{
+      if(index == 0){
+        return word.toLowerCase();
+      }
+     return word[0].toUpperCase()+ word.slice(1).toLowerCase();
+    }).join("")
+    return camelCase;
+}
+console.log(Words("AMULYA_AWASTHI"));
