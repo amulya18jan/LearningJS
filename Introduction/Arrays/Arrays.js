@@ -122,4 +122,22 @@ const largest = numbers.reduce((acc, larg)=>{
        return acc
     } ;
 },numbers[0])
-console.log(largest);;
+console.log(largest);
+console.log("______________________________________________________________________");
+console.log("Sum object values");
+const employees = [
+    {name:"A",salary:30000},
+    {name:"B",salary:25000},
+    {name:"C",salary:40000}
+];
+const totalSalary = employees.reduce((acc,sum)=>{
+    return sum.salary + acc  
+},0)
+console.log(totalSalary)
+console.log("______________________________________________________________________");
+console.log("Use reduce() to count the total number of characters in these words.");
+const words = ["Java", "Script", "React"];
+const lengthWords = words.reduce((acc, wor)=>{
+    return wor.length +acc;
+},0)
+console.log(lengthWords)
