@@ -172,3 +172,16 @@ const Words = (str)=>{
     return camelCase;
 }
 console.log(Words("AMULYA_AWASTHI"));
+console.log("________________________________________________________________________________");
+console.log("Write a function filterRange(arr, a, b) that gets an array arr, looks for elements with values higher or equal to a and lower or equal to b and return a result as an array.");
+let arr = [5, 3, 8, 1];
+const filterRange =(arr,a,b) =>{
+    const filtered = arr.filter((value)=>{
+    if(value >=a && value<=b){
+        return value;
+    }
+    })
+    return filtered
+}
+console.log(arr);
+console.log(filterRange(arr,1,4));
