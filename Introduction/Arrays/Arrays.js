@@ -74,3 +74,17 @@ const Names = users.map((naam)=>naam.name);
 console.log(Names);
 console.log("______________________________________________________________________");
 console.log(("5. Create a new object"));
+const products = [
+    { name: "Laptop", price: 50000 },
+    { name: "Phone", price: 30000 },
+    { name: "Tablet", price: 20000 }
+];
+const updateProduct =  products.map((prod) =>{
+   let discount = prod.price-(prod.price * 10/100);
+    return {
+        names:prod.name,
+        discountedPrice: discount
+    };
+   
+})
+console.log(updateProduct);
