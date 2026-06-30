@@ -136,4 +136,15 @@
 
 // console.log(result);
 
-alert("I am JavaScript");
+//alert("I am JavaScript");
+console.log("Working with variables");
+let admin;
+let name;
+name = "John";
+admin =name;
+alert(admin);
+console.log("2. Giving the right name");
+console.log("Create a variable with the name of our planet. How would you name such a variable?");
+const OUR_PLANET = "Earth";
+console.log("Create a variable to store the name of a current visitor to a website. How would you name that variable?");
+let currVisitor ;
