@@ -151,12 +151,12 @@
 // ];
 // const totalSalary = employees.filter(emp=>emp.salary>30000).map(emp=>emp.salary).reduce((acc, salar)=>{return salar+acc},0)
 // console.log(totalSalary);
-const employees = [
-    { name: "A", salary: 20000, active: true },
-    { name: "B", salary: 50000, active: true },
-    { name: "C", salary: 70000, active: false },
-    { name: "D", salary: 45000, active: true },
-    { name: "E", salary: 15000, active: false }
-];
-const activeEmplyoee = employees.filter(act => act.active == true && act.salary >30000).map(names=>names.name).join(",");
-console.log(activeEmplyoee)
+// const employees = [
+//     { name: "A", salary: 20000, active: true },
+//     { name: "B", salary: 50000, active: true },
+//     { name: "C", salary: 70000, active: false },
+//     { name: "D", salary: 45000, active: true },
+//     { name: "E", salary: 15000, active: false }
+// ];
+// const activeEmplyoee = employees.filter(act => act.active == true && act.salary >30000).map(names=>names.name).join(",");
+// console.log(activeEmplyoee)
