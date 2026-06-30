@@ -158,6 +158,8 @@
 //     { name: "D", salary: 45000, active: true },
 //     { name: "E", salary: 15000, active: false }
 // ];
+// const activeEmplyoee = employees.filter(act => act.active == true && act.salary >30000).map(names=>names.name).join(",");
+// console.log(activeEmplyoee)
 // const Names = users.map((naam)=>naam.name);
 // console.log(Names);
 // console.log("______________________________________________________________________");
