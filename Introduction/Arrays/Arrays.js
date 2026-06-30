@@ -160,3 +160,35 @@
 // ];
 // const activeEmplyoee = employees.filter(act => act.active == true && act.salary >30000).map(names=>names.name).join(",");
 // console.log(activeEmplyoee)
+// const Names = users.map((naam)=>naam.name);
+// console.log(Names);
+// console.log("______________________________________________________________________");
+// console.log((" Write the function camelize(str) that changes dash-separated words like “my-short-string” into camel-cased “myShortString”."));
+// const Words = (str)=>{
+//     const camelCase = str.split(/[-_\s]+/).map((word, index)=>{
+//       if(index == 0){
+//         return word.toLowerCase();
+//       }
+//      return word[0].toUpperCase()+ word.slice(1).toLowerCase();
+//     }).join("")
+//     return camelCase;
+// }
+// console.log(Words("AMULYA_AWASTHI"));
+// console.log("________________________________________________________________________________");
+// console.log("Write a function filterRange(arr, a, b) that gets an array arr, looks for elements with values higher or equal to a and lower or equal to b and return a result as an array.");
+// let arr = [5, 3, 8, 1];
+// const filterRange =(arr,a,b) =>{
+//     const filtered = arr.filter((value)=>{
+//     if(value >=a && value<=b){
+//         return value;
+//     }
+//     })
+//     return filtered
+// }
+// console.log(arr);
+// console.log(filterRange(arr,1,4));
+
+// console.log("Write a function filterRangeInPlace(arr, a, b) that gets an array arr and removes from it all values except those that are between a and b. The test is: a ≤ arr[i] ≤ b.");
+// let arr =[4,5,2,8,1];
+// const filterRangeInPlace = (arr,a,b)=>arr.filter(value => value >=a && value<=b);
+// console.log(arr,1,4);
