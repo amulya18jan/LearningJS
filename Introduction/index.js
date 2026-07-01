@@ -151,6 +151,9 @@
 // let result = prompt("Test");
 // let test =prompt("test", '');
 // let isBoss =confirm("Are you the Boss");
-let nameOfUser = prompt("Please enter your name :",);
-let confirmation =confirm(`Your name is ${nameOfUser} are you confirming this`);
-console.log(nameOfUser);
+// let nameOfUser = prompt("Please enter your name :",);
+// let confirmation =confirm(`Your name is ${nameOfUser} are you confirming this`);
+// console.log(nameOfUser);
+
+let operatorAdd = 2+2;
+console.log(operatorAdd);
