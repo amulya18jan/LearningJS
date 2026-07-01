@@ -161,3 +161,5 @@ let operatorSub =2-2;
 console.log(operatorSub);
 let operatorMulti = 2*2;
 console.log(operatorMulti);
+let operatorDivide = 2/2;
+console.log(operatorDivide);
