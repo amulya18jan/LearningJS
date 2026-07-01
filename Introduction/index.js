@@ -159,3 +159,5 @@ let operatorAdd = 2+2;
 console.log(operatorAdd);
 let operatorSub =2-2;
 console.log(operatorSub);
+let operatorMulti = 2*2;
+console.log(operatorMulti);
