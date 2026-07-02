@@ -171,3 +171,5 @@ let str = "1" + 2;
 console.log(typeof(str));
 let arr =[];
 console.log(arr == true);
+let arr11 =[];
+console.log(arr11 === false);
