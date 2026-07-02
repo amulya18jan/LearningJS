@@ -165,5 +165,7 @@ let operatorDivide = 2/2;
 console.log(operatorDivide);
 let operatorModulus = 2%2;
 console.log(operatorModulus);
-let operatorExponential = 2 ** 4;
+let operatorExponential = 2 ** (1/2);
 console.log(operatorExponential);
+let str = "1" + 2;
+console.log(typeof(str));
