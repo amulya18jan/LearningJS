@@ -169,3 +169,5 @@ let operatorExponential = 2 ** (1/2);
 console.log(operatorExponential);
 let str = "1" + 2;
 console.log(typeof(str));
+let arr =[];
+console.log(arr == true);
