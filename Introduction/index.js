@@ -173,3 +173,4 @@ let arr =[];
 console.log(arr == true);
 let arr11 =[];
 console.log(arr11 === false);
+console.log(0==false);
