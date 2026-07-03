@@ -166,8 +166,9 @@
 // let operatorModulus = 2%2;
 // console.log(operatorModulus);
 let counter =0;
-for(i=1;i<=5;i++){
+counter++
+for(i=1;i<5;i++){
     console.log("It my life and i will win");
-    ++counter
+    counter++
 }
 console.log(counter);
