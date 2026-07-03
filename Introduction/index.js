@@ -155,20 +155,13 @@
 // let confirmation =confirm(`Your name is ${nameOfUser} are you confirming this`);
 // console.log(nameOfUser);
 
-// let operatorAdd = 2+2;
-// console.log(operatorAdd);
-// let operatorSub =2-2;
-// console.log(operatorSub);
-// let operatorMulti = 2*2;
-// console.log(operatorMulti);
-// let operatorDivide = 2/2;
-// console.log(operatorDivide);
-// let operatorModulus = 2%2;
-// console.log(operatorModulus);
-
-let counter = 0;
-for(let i =1;i<=5;i++){
-    console.log("It's my life");
-    counter++;
-}
-console.log(counter)
+let operatorAdd = 2+2;
+console.log(operatorAdd);
+let operatorSub =2-2;
+console.log(operatorSub);
+let operatorMulti = 2*2;
+console.log(operatorMulti);
+let operatorDivide = 2/2;
+console.log(operatorDivide);
+let operatorModulus = 2%2;
+console.log(operatorModulus);
