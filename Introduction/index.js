@@ -165,10 +165,15 @@
 // console.log(operatorDivide);
 // let operatorModulus = 2%2;
 // console.log(operatorModulus);
-let counter =0;
-counter++
-for(i=1;i<5;i++){
-    console.log("It my life and i will win");
-    counter++
-}
-console.log(counter);
+// let counter =0;
+// counter++
+// for(i=1;i<5;i++){
+//     console.log("It my life and i will win");
+//     counter++
+// }
+// console.log(counter);
+let i=0;
+do{
+    console.log("I am Learning JavaScript");
+    i++;
+} while(i < 5);
