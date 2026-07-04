@@ -172,8 +172,19 @@
 //     counter++
 // }
 // console.log(counter);
-let i=0;
-do{
-    console.log("I am Learning JavaScript");
-    i++;
-} while(i < 5);
+function processString(str) {
+    let result = '';
+    for (const ch of str) {
+        if (ch === '@') {
+            if (result.length > 0) {
+                result = result.slice(0, -1); 
+            }
+        } else {
+            result += ch;
+        }
+    }
+    return result;
+}
+
+const str = "Amull@yYA@@aA@";
+console.log(processString(str));
