@@ -172,6 +172,7 @@
 //     counter++
 // }
 // console.log(counter);
+// slicing and dicing of string;
 function processString(str) {
     let result = '';
     for (const ch of str) {
