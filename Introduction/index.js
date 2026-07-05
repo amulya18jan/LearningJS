@@ -173,19 +173,19 @@
 // }
 // console.log(counter);
 // slicing and dicing of string;
-function processString(str) {
-    let result = '';
-    for (const ch of str) {
-        if (ch === '@') {
-            if (result.length > 0) {
-                result = result.slice(0, -1); 
-            }
-        } else {
-            result += ch;
-        }
-    }
-    return result;
-}
+// function processString(str) {
+//     let result = '';
+//     for (const ch of str) {
+//         if (ch === '@') {
+//             if (result.length > 0) {
+//                 result = result.slice(0, -1); 
+//             }
+//         } else {
+//             result += ch;
+//         }
+//     }
+//     return result;
+// }
 
-const str = "Amull@yYA@@aA@";
-console.log(processString(str));
+// const str = "Amull@yYA@@aA@";
+// console.log(processString(str));
