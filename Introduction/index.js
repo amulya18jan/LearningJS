@@ -190,3 +190,4 @@
 // const str = "Amull@yYA@@aA@";
 // console.log(processString(str));
 console.log(null > 0 );
+console.log(null == 0);
