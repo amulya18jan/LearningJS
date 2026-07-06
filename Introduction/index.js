@@ -121,7 +121,7 @@
 // console.log(REG);
 // let REG1 =str16.replace(/blue/gi, 'red');
 // console.log(REG1);
-// let REG2 =str16.replace(/Blue/g, 'Red');
+// let REG2 =str16.replace(/Blue/g, 'Red');     
 // console.log(REG2);
 // let REG3 =REG2.replace(/blue/g, 'red');
 // console.log(REG3);
@@ -189,3 +189,4 @@
 
 // const str = "Amull@yYA@@aA@";
 // console.log(processString(str));
+console.log(null > 0 );
