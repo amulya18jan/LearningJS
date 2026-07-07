@@ -197,6 +197,12 @@
 // console.log(undefined >= 0);
 // console.log(undefined <= 0);
 // console.log(null < 0);
-let age = parseInt(prompt("What is you age!"));
-let greetingsByAge = (age <= 3) ? "Hi Baby" : (age > 100) ? "Greetings" : (age >=18) ? "Hello Sir" : "Hello Legend";
-alert(greetingsByAge);
+// let age = parseInt(prompt("What is you age!"));
+// let greetingsByAge = (age <= 3) ? "Hi Baby" : (age > 100) ? "Greetings" : (age >=18) ? "Hello Sir" : "Hello Legend";
+// alert(greetingsByAge);
+let answerTheQuestion = prompt("What's the “official” name of JavaScript?");
+if(answerTheQuestion ==="ECMAScript" || answerTheQuestion === "ecmascript"|| answerTheQuestion ==="ECMASCRIPT" || answerTheQuestion === "EcMaScRiPt"){
+    alert("Right");
+}else{
+    alert("You don't know? “ECMAScript”!");
+}
