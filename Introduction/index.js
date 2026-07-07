@@ -200,9 +200,19 @@
 // let age = parseInt(prompt("What is you age!"));
 // let greetingsByAge = (age <= 3) ? "Hi Baby" : (age > 100) ? "Greetings" : (age >=18) ? "Hello Sir" : "Hello Legend";
 // alert(greetingsByAge);
-let answerTheQuestion = prompt("What's the “official” name of JavaScript?");
-if(answerTheQuestion ==="ECMAScript" || answerTheQuestion === "ecmascript"|| answerTheQuestion ==="ECMASCRIPT" || answerTheQuestion === "EcMaScRiPt"){
-    alert("Right");
-}else{
-    alert("You don't know? “ECMAScript”!");
-}
+// let answerTheQuestion = prompt("What's the “official” name of JavaScript?");
+// if(answerTheQuestion ==="ECMAScript" || answerTheQuestion === "ecmascript"|| answerTheQuestion ==="ECMASCRIPT" || answerTheQuestion === "EcMaScRiPt"){
+//     alert("Right");
+// }else{
+//     alert("You don't know? “ECMAScript”!");
+// }
+// let number = parseInt(prompt("Give Any number to check  whether is greater than zero, less than or equal to zero"));
+// if(number > 0){
+//     alert(1);
+// }else if (number < 0){
+//     alert(-1);
+// }else {
+//     alert(0);
+// }
+// let result =(a+b<4) ? 'Below' : 'Over';
+let message = (login == 'Employee') ? 'Hello' : (login == 'Director') ? 'Greetings' : (login == '') ? 'No login' : '';
