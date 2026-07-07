@@ -189,11 +189,14 @@
 
 // const str = "Amull@yYA@@aA@";
 // console.log(processString(str));
-console.log(null > 0 );
-console.log(null == 0);
-console.log(null >= 0);
-console.log(undefined > 0);
-console.log(undefined == 0);
-console.log(undefined >= 0);
-console.log(undefined <= 0);
-console.log(null < 0);
+// console.log(null > 0 );
+// console.log(null == 0);
+// console.log(null >= 0);
+// console.log(undefined > 0);
+// console.log(undefined == 0);
+// console.log(undefined >= 0);
+// console.log(undefined <= 0);
+// console.log(null < 0);
+let age = parseInt(prompt("What is you age!"));
+let greetingsByAge = (age <= 3) ? "Hi Baby" : (age > 100) ? "Greetings" : (age >=18) ? "Hello Sir" : "Hello Legend";
+alert(greetingsByAge);
