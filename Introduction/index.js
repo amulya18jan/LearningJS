@@ -215,4 +215,8 @@
 //     alert(0);
 // }
 // let result =(a+b<4) ? 'Below' : 'Over';
-let message = (login == 'Employee') ? 'Hello' : (login == 'Director') ? 'Greetings' : (login == '') ? 'No login' : '';
+// let message = (login == 'Employee') ? 'Hello' : (login == 'Director') ? 'Greetings' : (login == '') ? 'No login' : '';
+let age =parseInt(prompt("What is your age"));
+if(age>=14&&age<=90){
+    alert("Inclusively")
+}
