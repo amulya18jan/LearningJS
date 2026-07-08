@@ -216,7 +216,30 @@
 // }
 // let result =(a+b<4) ? 'Below' : 'Over';
 // let message = (login == 'Employee') ? 'Hello' : (login == 'Director') ? 'Greetings' : (login == '') ? 'No login' : '';
-let age =parseInt(prompt("What is your age"));
-if(age>=14&&age<=90){
-    alert("Inclusively")
+// let age =parseInt(prompt("What is your age"));
+// if(!(age>=14&&age<=90)){
+//     alert("Inclusively")
+// }
+// console.log("Login with promt");
+// let userName =  prompt("Please enter your username");
+// if(userName===''|| userName === null){
+//     alert("Canceled")
+// }else if(userName==="Admin"){ 
+// let password = prompt("Enter your Password");
+// if(password===''||password=== null){
+// alert("User cancelled the Login")
+// }else if(password==="TheMaster"){
+//     alert("Welcome!");
+// }else{
+//     alert("Wrong Password");
+// }
+
+// }else{
+//     alert("I don't know you")
+// }
+for(let i=1;i<=10;i++){
+    if(!(i%2==0)){
+        continue;
+    }
+ console.log(i);
 }
