@@ -297,8 +297,20 @@
   
 // }
 // console.log(num+"!"+"=" + factorial)
-console.log("Ask the user for a number and count how many digits it has.");
-let num =String(prompt("Type any number and i will tell you the length of the number"));
+// console.log("Ask the user for a number and count how many digits it has.");
+// let num =String(prompt("Type any number and i will tell you the length of the number"));
 
-alert(num.length + "Digit");
-
+// alert(num.length + "Digit");
+let num =Number(prompt("give me the numbe and i will count the digit for you"));
+let count =0;
+if(num===0){
+    count =1;
+    alert(count);
+}else{
+    let temp = Math.abs(num);
+    while(temp>0){
+        temp =Math.floor(temp/10);
+        count++
+    }
+}
+alert(`${num} has ${count} digits`)
