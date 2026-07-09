@@ -258,21 +258,43 @@
 // for(let num =0; num<=100;){
 //     num=prompt("Enter a number greater than 100",0);
 // }
-let num=Number(prompt("Give a number for which you wants prime"));
-if(num==1||num===0){
-    alert("Number is less than or equals to 1 which is not a prime number")
-}else{
-    for(i=2;i<=num;i++){
-        isPrime=true;
-        for(j=2;j*j<=i;j++){
-            if(i%j===0){
-                isPrime=false;
-                console.log(i+" "+"(Not a prime)")
-                break;
-            }
-        }
-        if(isPrime){
-            console.log(i+": "+"Is a Prime Number")
-        }
-    }
+// let num=Number(prompt("Give a number for which you wants prime"));
+// if(num==1||num===0){
+//     alert("Number is less than or equals to 1 which is not a prime number")
+// }else{
+//     for(i=2;i<=num;i++){
+//         isPrime=true;
+//         for(j=2;j*j<=i;j++){
+//             if(i%j===0){
+//                 isPrime=false;
+//                 console.log(i+" "+"(Not a prime)")
+//                 break;
+//             }
+//         }
+//         if(isPrime){
+//             console.log(i+": "+"Is a Prime Number")
+//         }
+//     }
+// }
+// console.log("Write a program that asks the user for a number n and calculates the sum of all numbers from 1 to n.");
+// let num =Number(prompt("Give me a number for a sum"));
+// let sum=0;
+// for(let i=1;i<=num;i++){
+//     sum=sum+i;
+// }
+// console.log(sum);
+// console.log("Print the multiplication table of a given number (up to 10).");
+// let num = 5;
+// for(let i=1;i<=10;i++){
+//     let multiplication = num*i;
+//     console.log(num + "X" + i + " =" + multiplication );
+// }
+console.log("Calculate the factorial of a number n");
+let num =5;
+let factorial =1;
+for(let i=num;i>=1;i--){    
+    factorial *=i;
+  
 }
+console.log(num+"!"+"=" + factorial)
+
