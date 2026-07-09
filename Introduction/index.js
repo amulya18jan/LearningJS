@@ -301,7 +301,7 @@
 // let num =String(prompt("Type any number and i will tell you the length of the number"));
 
 // alert(num.length + "Digit");
-let num =Number(prompt("give me the numbe and i will count the digit for you"));
+let num =Number(prompt("give me the number and, I will count the digit for you"));
 let count =0;
 if(num===0){
     count =1;
