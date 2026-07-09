@@ -255,6 +255,24 @@
 // do{
 //     num=prompt("Enter a number Grater than 100",0)
 // }while(num<=100);
-for(let num =0; num<=100;){
-    num=prompt("Enter a number greater than 100",0);
+// for(let num =0; num<=100;){
+//     num=prompt("Enter a number greater than 100",0);
+// }
+let num=Number(prompt("Give a number for which you wants prime"));
+if(num==1||num===0){
+    alert("Number is less than or equals to 1 which is not a prime number")
+}else{
+    for(i=2;i<=num;i++){
+        isPrime=true;
+        for(j=2;j*j<=i;j++){
+            if(i%j===0){
+                isPrime=false;
+                console.log(i+" "+"(Not a prime)")
+                break;
+            }
+        }
+        if(isPrime){
+            console.log(i+": "+"Is a Prime Number")
+        }
+    }
 }
