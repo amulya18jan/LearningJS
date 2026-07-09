@@ -251,3 +251,10 @@
 // for (let i = 0; i < 3; i++) {
 //   alert( `number ${i}!` );
 // }
+// let num;
+// do{
+//     num=prompt("Enter a number Grater than 100",0)
+// }while(num<=100);
+for(let num =0; num<=100;){
+    num=prompt("Enter a number greater than 100",0);
+}
