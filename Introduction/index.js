@@ -289,12 +289,16 @@
 //     let multiplication = num*i;
 //     console.log(num + "X" + i + " =" + multiplication );
 // }
-console.log("Calculate the factorial of a number n");
-let num =5;
-let factorial =1;
-for(let i=num;i>=1;i--){    
-    factorial *=i;
+// console.log("Calculate the factorial of a number n");
+// let num =5;
+// let factorial =1;
+// for(let i=num;i>=1;i--){    
+//     factorial *=i;
   
-}
-console.log(num+"!"+"=" + factorial)
+// }
+// console.log(num+"!"+"=" + factorial)
+console.log("Ask the user for a number and count how many digits it has.");
+let num =String(prompt("Type any number and i will tell you the length of the number"));
+
+alert(num.length + "Digit");
 
