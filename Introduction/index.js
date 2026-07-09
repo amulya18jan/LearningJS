@@ -301,16 +301,24 @@
 // let num =String(prompt("Type any number and i will tell you the length of the number"));
 
 // alert(num.length + "Digit");
-let num =Number(prompt("give me the number and, I will count the digit for you"));
-let count =0;
-if(num===0){
-    count =1;
-    alert(count);
-}else{
-    let temp = Math.abs(num);
-    while(temp>0){
-        temp =Math.floor(temp/10);
-        count++
-    }
+// let num =Number(prompt("Give me the number and i will give you the count of digit"));
+// let count =0;
+// if(num===0){
+//     count++;
+//     console.log(`Your number is ${num} and your digit count is ${count}`)
+// }else{
+//     temp = Math.abs(num);
+//     while(temp>0){
+//         temp=Math.floor(temp/10);
+//         count++
+//     }
+//     alert(`Your number is ${num} and you number digits are ${count}`)
+// }
+let num =-513;
+let reversed =0;
+while(num>0){
+    let temp =num%10;
+    reversed= reversed*10 + temp;
+    num=Math.floor(num/10);
 }
-alert(`${num} has ${count} digits`)
+console.log(reversed)
