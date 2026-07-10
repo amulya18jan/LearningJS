@@ -314,12 +314,12 @@
 //     }
 //     alert(`Your number is ${num} and you number digits are ${count}`)
 // }
-// let num =12345;
-// let reversed =0;
-// let temp= 0;
-// while(num>0){
-//      temp =num%10;
-//     reversed= reversed*10 + temp;
-//     num=Math.floor(num/10);
-// }
-// console.log(reversed)
+let num =12345;
+let reversed =0;
+let temp= 0;
+while(num>0){
+     temp =num%10;
+    reversed= reversed*10 + temp;
+    num=Math.floor(num/10);
+}
+console.log(reversed)
