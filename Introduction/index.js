@@ -323,3 +323,23 @@
 //     num=Math.floor(num/10);
 // }
 // console.log(reversed)
+let num =Number(prompt("Give me a number to check whether its prime or not"));
+const isPrime=(num)=>{
+    if(num<=1){
+        return false;
+    }
+    if(num===2){
+        return true;
+    }
+    for(let i=2;i*i<=num;i++){
+        if(num%i===0){
+            return false
+        }
+    }
+    return true;
+}
+if(isPrime(num)){
+    console.log("Its a prime number"+" "+num);
+}else{
+     console.log(num + " is not a prime number");
+}
