@@ -323,3 +323,11 @@
 //     num=Math.floor(num/10);
 // }
 // console.log(reversed)
+console.log("Given a number, find the largest digit in it.");
+let num =1538;
+let max=0;
+let temp=0;
+while(num>0){
+    temp = num%10;
+    max= max*10 + temp;
+}
