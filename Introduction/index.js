@@ -325,21 +325,18 @@
 // console.log(reversed)
 let num =Number(prompt("Give me a number to check whether its prime or not"));
 const isPrime=(num)=>{
-    if(num<=1){
+    if(num<2){
         return false;
     }
-    if(num===2){
+    for(let i=2;i<=num;i++){
+        if(num%i===0){
+            return false;
+        }
         return true;
     }
-    for(let i=2;i*i<=num;i++){
-        if(num%i===0){
-            return false
-        }
-    }
-    return true;
 }
 if(isPrime(num)){
-    console.log("Its a prime number"+" "+num);
+    console.log(num + " " + "Its a prime number")
 }else{
-     console.log(num + " is not a prime number");
+    console.log(num + " " + "Its not a prime number");
 }
