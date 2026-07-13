@@ -1,4 +1,4 @@
-let num =Number(prompt("give me a number and I will give you the all prime number between them"));
+let num =+(prompt("give me a number and I will give you the all prime number between them"));
 let primNum =true;
 if(num < 2){
     console.log("There is no prime number" + num);
