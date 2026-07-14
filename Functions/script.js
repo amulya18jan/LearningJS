@@ -81,12 +81,28 @@
 //   return a **b;
 // }
 // console.log(pow(2,5));
-console.log("Doing pow from loops or Manunal");
-function pow(x,n){
-  let result =x;
-  for(let i=1;i<n;i++){
-    result*=x;
-  }
-  return result;
+// console.log("Doing pow from loops or Manunal");
+// function pow(x,n){
+//   let result =x;
+//   for(let i=1;i<n;i++){
+//     result*=x;
+//   }
+//   return result;
+// }
+// console.log(pow(3,3));
+console.log(`Replace Function Expressions with arrow functions in the code below:
+
+function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
 }
-console.log(pow(3,3));
+
+ask(
+  "Do you agree?",
+  function() { alert("You agreed."); },
+  function() { alert("You canceled the execution."); }
+);`)
+const ask =(question,yes,no)=>{
+  return (confirm(question))? yes():no();
+}
+ask("Do you agree",()=>{alert("You agreed")},()=> { alert("You canceled the execution."); })
