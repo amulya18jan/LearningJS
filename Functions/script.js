@@ -58,16 +58,21 @@
 // return [add(x,y), multiply(x,y),division(x,y),modulus(x,y)];
 // }
 // console.log(calculator(10,20));
-console.log(`Rewrite the function using '?' or '||'`);
-console.log(`Question:  function checkAge(age) {
-  if (age > 18) {
-    return true;
-  } else {
-    return confirm('Did parents allow you?');
-  }
-}`)
-function checkAge(age){
- return (age>18)? true:confirm('Did parents allow you?');
+// console.log(`Rewrite the function using '?' or '||'`);
+// console.log(`Question:  function checkAge(age) {
+//   if (age > 18) {
+//     return true;
+//   } else {
+//     return confirm('Did parents allow you?');
+//   }
+// }`)
+// function checkAge(age){
+//  return (age>18)? true:confirm('Did parents allow you?');
  
+// }
+// console.log(checkAge(17));
+console.log("Function min(a, b)");
+function min(a,b){
+  return (a<b)?a:b;
 }
-console.log(checkAge(17));
+console.log(min(-1,-5));
