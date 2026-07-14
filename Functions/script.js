@@ -76,7 +76,17 @@
 //   return (a<b)?a:b;
 // }
 // console.log(min(-1,-5));
-function pow(a,b){
-  return a **b;
+//console.log("using exponential operator")
+// function pow(a,b){
+//   return a **b;
+// }
+// console.log(pow(2,5));
+console.log("Doing pow from loops or Manunal");
+function pow(x,n){
+  let result =x;
+  for(let i=1;i<n;i++){
+    result*=x;
+  }
+  return result;
 }
-console.log(pow(2,5));
+console.log(pow(3,3));
