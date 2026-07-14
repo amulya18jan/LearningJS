@@ -71,8 +71,12 @@
  
 // }
 // console.log(checkAge(17));
-console.log("Function min(a, b)");
-function min(a,b){
-  return (a<b)?a:b;
+// console.log("Function min(a, b)");
+// function min(a,b){
+//   return (a<b)?a:b;
+// }
+// console.log(min(-1,-5));
+function pow(a,b){
+  return a **b;
 }
-console.log(min(-1,-5));
+console.log(pow(2,5));
