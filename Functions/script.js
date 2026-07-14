@@ -1,60 +1,73 @@
-console.log("Without parameters");
-function printMe() {
-  console.log("Hello World! This is Amulya learning functions");
-}
-printMe();
+// console.log("Without parameters");
+// function printMe() {
+//   console.log("Hello World! This is Amulya learning functions");
+// }
+// printMe();
 
-console.log(`Using Parameters`);
-function printThis(params) {
-  console.log(`Hello World! This is ${params} learning functions`);
-}
-printThis("Amulya");
+// console.log(`Using Parameters`);
+// function printThis(params) {
+//   console.log(`Hello World! This is ${params} learning functions`);
+// }
+// printThis("Amulya");
 
-console.log("Declaring function using expression");
-const addTwoNum = function (a,b) {
-  return (a+b);
-};
-console.log (addTwoNum(10,20));
+// console.log("Declaring function using expression");
+// const addTwoNum = function (a,b) {
+//   return (a+b);
+// };
+// console.log (addTwoNum(10,20));
 
-console.log("______________________________________________________________________");
-console.log("Default parameters in functions of java scripts");
-function DEF(a , b=0){
- return (2*(a+b));
+// console.log("______________________________________________________________________");
+// console.log("Default parameters in functions of java scripts");
+// function DEF(a , b=0){
+//  return (2*(a+b));
+// }
+// console.log("Giving all parameters");
+// console.log(DEF(10,10));
+// console.log("Giving only one parameters");
+// console.log(DEF(10));
+// console.log("______________________________________________________________________");
+// console.log("Learning Rest parameter Function");
+// function infiNum(a, ...b){
+//     console.log(a);
+//     console.log(b);
+// }
+// infiNum(2,4,8,10,11,12,13,14,15,16,17,20,34,86);
+// console.log("One thing please keep in mind we represent rest parameter in the function with ... sign before the parameter name and it will apply only on one parameter which is at the last.");
+// console.log("___________________________________________________________________________________");
+// console.log("Learning Arrow Function in JS");
+// const multi =(a, b) => a*b;
+// console.log(multi(13,13));
+// let divide=(x,y) => x/y;
+// console.log(divide(10,2));
+// console.log("___________________________________________________________________________________");
+// console.log("Learning Nesting Function in JS");
+// function calculator (x,y){
+// console.log(`My numbers are ${x},${y}`);
+// function add(a,b){
+// return a+b;
+// }
+// function multiply(a,b){
+// return a*b;
+// }
+// function division(a,b){
+// return a/b;
+// }
+// function modulus(a,b){
+// return b%a;
+// }
+// return [add(x,y), multiply(x,y),division(x,y),modulus(x,y)];
+// }
+// console.log(calculator(10,20));
+console.log(`Rewrite the function using '?' or '||'`);
+console.log(`Question:  function checkAge(age) {
+  if (age > 18) {
+    return true;
+  } else {
+    return confirm('Did parents allow you?');
+  }
+}`)
+function checkAge(age){
+ return (age>18)? true:confirm('Did parents allow you?');
+ 
 }
-console.log("Giving all parameters");
-console.log(DEF(10,10));
-console.log("Giving only one parameters");
-console.log(DEF(10));
-console.log("______________________________________________________________________");
-console.log("Learning Rest parameter Function");
-function infiNum(a, ...b){
-    console.log(a);
-    console.log(b);
-}
-infiNum(2,4,8,10,11,12,13,14,15,16,17,20,34,86);
-console.log("One thing please keep in mind we represent rest parameter in the function with ... sign before the parameter name and it will apply only on one parameter which is at the last.");
-console.log("___________________________________________________________________________________");
-console.log("Learning Arrow Function in JS");
-const multi =(a, b) => a*b;
-console.log(multi(13,13));
-let divide=(x,y) => x/y;
-console.log(divide(10,2));
-console.log("___________________________________________________________________________________");
-console.log("Learning Nesting Function in JS");
-function calculator (x,y){
-console.log(`My numbers are ${x},${y}`);
-function add(a,b){
-return a+b;
-}
-function multiply(a,b){
-return a*b;
-}
-function division(a,b){
-return a/b;
-}
-function modulus(a,b){
-return b%a;
-}
-return [add(x,y), multiply(x,y),division(x,y),modulus(x,y)];
-}
-console.log(calculator(10,20));
+console.log(checkAge(17));
