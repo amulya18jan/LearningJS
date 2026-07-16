@@ -23,8 +23,10 @@ isPrime(num){
         }
         return TwinPrime;
     }
+    
 }
 let primeCheck =new NumFinder();
 let TwinPrime = new NumFinder();
 console.log(primeCheck.isPrime(7));
 console.log(TwinPrime.isTwinPrime(20));
+console.log(typeof NumFinder);
