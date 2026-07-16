@@ -45,7 +45,10 @@ const primeObject ={
       return true;
     
     },
-    isTwinPrime(num){
+    
+}
+const Twin ={
+isTwinPrime(num){
         const TwinPrime=[];
         for(let i =2;i<num-2;i++){
             if(this.isPrime(i)&& this.isPrime(i+2)){
@@ -55,6 +58,7 @@ const primeObject ={
         return TwinPrime;
     }
 }
+Twin.__proto__ =primeObject;
 console.log(primeObject.nPrimeNUmber(20));
 console.log(primeObject.isPrime(20));
-console.log(primeObject.isTwinPrime(20));
+console.log(Twin.isTwinPrime(20));
