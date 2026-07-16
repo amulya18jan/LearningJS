@@ -1,4 +1,7 @@
 class NumFinder{
+    constructor(){
+        console.log("Creating new Objects");
+    }
 isPrime(num){
      if(num<2){
         return false;
@@ -32,11 +35,18 @@ isPrime(num){
         }
         return TwinPrime;
     }
+    whoami(str){
+        this.name = str;
+        return this.name;
+    }
     
 }
 let primeCheck =new NumFinder();
 let TwinPrime = new NumFinder();
 let SexyPrime =new NumFinder();
-console.log(primeCheck.isPrime(7));
-console.log(TwinPrime.isTwinPrime(20));
-console.log(SexyPrime.sexyPrime(50));
+let Amulya =new NumFinder();
+console.log(Amulya.whoami("Amulya"));
+console.log(Amulya);
+// console.log(primeCheck.isPrime(7));
+// console.log(TwinPrime.isTwinPrime(20));
+// console.log(SexyPrime.sexyPrime(50));
