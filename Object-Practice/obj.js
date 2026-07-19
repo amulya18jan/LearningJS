@@ -68,6 +68,6 @@
 // console.log(primeObject);
 let fruits = "oranges"
 let bag = {
-    [fruits]:5,
+    [fruits+'Computer']:5,
 }
 console.log(bag);
