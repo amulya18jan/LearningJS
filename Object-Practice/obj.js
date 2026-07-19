@@ -66,8 +66,14 @@
 // console.log(Twin.isTwinPrime(20));
 // console.log(primeObject[key]);
 // console.log(primeObject);
-let fruits = "oranges"
-let bag = {
-    [fruits+'Computer']:5,
-}
-console.log(bag);
+// let fruits = "oranges"
+// let bag = {
+//     [fruits+'Computer']:5,
+// }
+// console.log(bag);
+let makeUser = (name,age)=>{
+    return {name:name,
+    age:age
+}}
+let user = makeUser("Amulya",25);
+console.log(user.age);
