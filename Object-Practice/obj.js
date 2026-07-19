@@ -45,8 +45,10 @@ const primeObject ={
       return true;
     
     },
+   
     
 }
+let key ="Amulya Awasthi";
 const Twin ={
 isTwinPrime(num){
         const TwinPrime=[];
@@ -62,3 +64,5 @@ Twin.__proto__ =primeObject;
 console.log(primeObject.nPrimeNUmber(20));
 console.log(primeObject.isPrime(20));
 console.log(Twin.isTwinPrime(20));
+console.log(primeObject[key]);
+console.log(primeObject);
