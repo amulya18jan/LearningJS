@@ -71,9 +71,19 @@
 //     [fruits+'Computer']:5,
 // }
 // console.log(bag);
-let makeUser = (name,age)=>{
-    return {name:name,
-    age:age
-}}
-let user = makeUser("Amulya",25);
-console.log(user.age);
+// let makeUser = (name,age)=>{
+//     return {name:name,
+//     age:age
+// }}
+// let user = makeUser("Amulya",25);
+// console.log(user.age);
+let obj ={
+    name : "Amulya Awasthi",
+    age : 25,
+    DOB : "18-01-2001",
+}
+
+for(let key in obj){
+    console.log(key+ ":" + obj[key])
+    
+}
