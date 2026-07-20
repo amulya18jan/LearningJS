@@ -130,3 +130,13 @@ console.log( isEmpty(schedule) ); // true
 schedule["8:30"] = "get up";
 
 console.log( isEmpty(schedule) );
+let salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130
+}
+let sum =0;
+for (let key in salaries){
+    sum += salaries[key];
+}
+console.log(sum);
