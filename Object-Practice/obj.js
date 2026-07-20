@@ -97,11 +97,37 @@
 // for(let code in codes){
 //     console.log(+code + ":"+ codes[code]);
 // }
-let user = {};
-user.name= "John";
-user.surname = "Smith";
-console.log(user);
-user.name = "Pete";
-console.log(user);
-delete user.name;
-console.log(user)
+// let user = {};
+// user.name= "John";
+// user.surname = "Smith";
+// console.log(user);
+// user.name = "Pete";
+// console.log(user);
+// delete user.name;
+// console.log(user)
+console.log(`Write the function isEmpty(obj) which returns true if the object has no properties, false otherwise.
+
+Should work like that:
+
+let schedule = {};
+
+alert( isEmpty(schedule) ); // true
+
+schedule["8:30"] = "get up";
+
+alert( isEmpty(schedule) ); // false`);
+
+function isEmpty(obj) {
+  for (let key in obj) {
+    // if the loop has started, there is a property
+    return false;
+  }
+  return true;
+}
+let schedule = {};
+
+console.log( isEmpty(schedule) ); // true
+
+schedule["8:30"] = "get up";
+
+console.log( isEmpty(schedule) );
