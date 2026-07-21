@@ -105,38 +105,21 @@
 // console.log(user);
 // delete user.name;
 // console.log(user)
-console.log(`Write the function isEmpty(obj) which returns true if the object has no properties, false otherwise.
-
-Should work like that:
-
-let schedule = {};
-
-alert( isEmpty(schedule) ); // true
-
-schedule["8:30"] = "get up";
-
-alert( isEmpty(schedule) ); // false`);
-
-function isEmpty(obj) {
-  for (let key in obj) {
-    return false;
-  }
-  return true;
+// 
+console.log(`Create a function multiplyNumeric(obj) that multiplies all numeric property values of obj by 2.`)
+let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu"
+};
+const multiplyNumeric =(menu)=>{
+    
+    for(let key in menu){
+        if(typeof(menu[key])=== "number"){
+        menu[key]*=2
+        }
+      
+    }
+    return menu;
 }
-let schedule = {};
-
-console.log( isEmpty(schedule) ); // true
-
-schedule["8:30"] = "get up";
-
-console.log( isEmpty(schedule) );
-let salaries = {
-  John: 100,
-  Ann: 160,
-  Pete: 130
-}
-let sum =0;
-for (let key in salaries){
-    sum += salaries[key];
-}
-console.log(sum);
+console.log(multiplyNumeric(menu))
