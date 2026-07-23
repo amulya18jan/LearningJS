@@ -73,30 +73,25 @@
 
 // console.log(rev)
 console.log("Palindrome number")
-const palin =(num)=>{
+const palin = (num) => {
   let originNum = num;
-  let rev =0;
-  while(num>0){
-   rev =rev*10 + num%10;
-   num = ~~(num/10);
+  let rev = 0;
+  while (num > 0) {
+    rev = rev * 10 + (num % 10);
+    num = ~~(num / 10);
   }
-  if(rev===originNum){
-    return(rev +" "+"its Palindrome number")
-  }else{
-    return( originNum+" "+"its not palindrome number")
+  return rev === originNum;
+};
+
+const superPalin=(num)=>{
+  let root = Math.sqrt(num);
+  if (!Number.isInteger(root)) {
+    return "Its not a super Palindrome";
+  }
+  if (palin(num) && palin(root)) {
+    return "Its a super Palindrome";
+  } else {
+    return "Its not a super Palindrome";
   }
 }
-console.log(palin(11)) ;
-// const superPalin=(num)=>{
-//   let originNum = num;
-//   let rev =0;
-//   while(num>0){
-//    rev =rev*10 + num%10;
-//    num = ~~(num/10);
-//   }
-//   if(rev===originNum){
-//     return(rev +" "+"its Palindrome number")
-//   }else{
-//     return( originNum+" "+"its not palindrome number")
-//   }
-// }
+console.log(superPalin(11))
