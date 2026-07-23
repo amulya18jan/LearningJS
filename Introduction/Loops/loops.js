@@ -72,26 +72,34 @@
 
 
 // console.log(rev)
-console.log("Palindrome number")
-const palin = (num) => {
-  let originNum = num;
-  let rev = 0;
-  while (num > 0) {
-    rev = rev * 10 + (num % 10);
-    num = ~~(num / 10);
-  }
-  return rev === originNum;
-};
+// console.log("Palindrome number")
+// const palin = (num) => {
+//   let originNum = num;
+//   let rev = 0;
+//   while (num > 0) {
+//     rev = rev * 10 + (num % 10);
+//     num = ~~(num / 10);
+//   }
+//   return rev === originNum;
+// };
 
-const superPalin=(num)=>{
-  let root = Math.sqrt(num);
-  if (!Number.isInteger(root)) {
-    return "Its not a super Palindrome";
-  }
-  if (palin(num) && palin(root)) {
-    return "Its a super Palindrome";
-  } else {
-    return "Its not a super Palindrome";
-  }
+// const superPalin=(num)=>{
+//   let root = Math.sqrt(num);
+//   if (!Number.isInteger(root)) {
+//     return "Its not a super Palindrome";
+//   }
+//   if (palin(num) && palin(root)) {
+//     return "Its a super Palindrome";
+//   } else {
+//     return "Its not a super Palindrome";
+//   }
+// }
+// console.log(superPalin(11))
+let arr =[3,6,1,2,7,8,4,5,6,7,9,10,4];
+let conArr=[];
+for (let i = 0; i < arr.length; i++) {
+    if (!conArr.includes(arr[i])) {
+        conArr.push(arr[i]);
+    }
 }
-console.log(superPalin(11))
+console.log(conArr.sort((a, b)=> a-b));
