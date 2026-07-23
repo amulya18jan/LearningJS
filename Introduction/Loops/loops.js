@@ -52,12 +52,30 @@
 // }
 // }
 // guessTheNumber();
-  console.log("Solving this question using while loop");
-  let humanChoice =parseInt(prompt("Select any number between 1 to 10 :"));
-  let num = Math.floor(Math.random()*11);
+//   console.log("Solving this question using while loop");
+//   let humanChoice =parseInt(prompt("Select any number between 1 to 10 :"));
+//   let num = Math.floor(Math.random()*11);
 
-  while (humanChoice !== num) {
-    console.log("Try Again");
-     humanChoice =parseInt(prompt("Select any number between 1 to 10 :"));
-  }
-console.log("You won the game");
+//   while (humanChoice !== num) {
+//     console.log("Try Again");
+//      humanChoice =parseInt(prompt("Select any number between 1 to 10 :"));
+//   }
+// console.log("You won the game");
+console.log("Reverse a numbeer")
+let num = 123;
+let rev =0;
+while (num> 0) 
+{
+  rev = rev*10 +num%10;
+  num= Math.floor(num/10)
+}
+
+
+console.log(rev)
+// console.log("Palindrome number")
+// const palin =(num)=>{
+//   let rev =0;
+//   while(num>0){
+
+//   }
+// }
