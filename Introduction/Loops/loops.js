@@ -61,21 +61,42 @@
 //      humanChoice =parseInt(prompt("Select any number between 1 to 10 :"));
 //   }
 // console.log("You won the game");
-console.log("Reverse a numbeer")
-let num = 123;
-let rev =0;
-while (num> 0) 
-{
-  rev = rev*10 +num%10;
-  num= Math.floor(num/10)
+// console.log("Reverse a numbeer")
+// let num = 123;
+// let rev =0;
+// while (num> 0) 
+// {
+//   rev = rev*10 +num%10;
+//   num= Math.floor(num/10)
+// }
+
+
+// console.log(rev)
+console.log("Palindrome number")
+const palin =(num)=>{
+  let originNum = num;
+  let rev =0;
+  while(num>0){
+   rev =rev*10 + num%10;
+   num = ~~(num/10);
+  }
+  if(rev===originNum){
+    return(rev +" "+"its Palindrome number")
+  }else{
+    return( originNum+" "+"its not palindrome number")
+  }
 }
-
-
-console.log(rev)
-// console.log("Palindrome number")
-// const palin =(num)=>{
+console.log(palin(11)) ;
+// const superPalin=(num)=>{
+//   let originNum = num;
 //   let rev =0;
 //   while(num>0){
-
+//    rev =rev*10 + num%10;
+//    num = ~~(num/10);
+//   }
+//   if(rev===originNum){
+//     return(rev +" "+"its Palindrome number")
+//   }else{
+//     return( originNum+" "+"its not palindrome number")
 //   }
 // }
