@@ -106,20 +106,28 @@
 // delete user.name;
 // console.log(user)
 // 
-console.log(`Create a function multiplyNumeric(obj) that multiplies all numeric property values of obj by 2.`)
-let menu = {
-  width: 200,
-  height: 300,
-  title: "My menu"
-};
-const multiplyNumeric =(menu)=>{
+// console.log(`Create a function multiplyNumeric(obj) that multiplies all numeric property values of obj by 2.`)
+// let menu = {
+//   width: 200,
+//   height: 300,
+//   title: "My menu"
+// };
+// const multiplyNumeric =(menu)=>{
     
-    for(let key in menu){
-        if(typeof(menu[key])=== "number"){
-        menu[key]*=2
-        }
+//     for(let key in menu){
+//         if(typeof(menu[key])=== "number"){
+//         menu[key]*=2
+//         }
       
-    }
-    return menu;
-}
-console.log(multiplyNumeric(menu))
+//     }
+//     return menu;
+// }
+// console.log(multiplyNumeric(menu))
+let user = { name: "John" };
+
+let admin = user; 
+console.log(user);
+console.log(admin);
+admin.name="Amulya"
+console.log(admin);
+console.log(user);
