@@ -100,6 +100,6 @@ let conArr=[];
 for (let i = 0; i < arr.length; i++) {
     if (!conArr.includes(arr[i])) {
         conArr.push(arr[i]);
-    }
+    }   
 }
 console.log(conArr.sort((a, b)=> a-b));
