@@ -123,11 +123,11 @@
 //     return menu;
 // }
 // console.log(multiplyNumeric(menu))
-let user = { name: "John" };
+// let user = { name: "John" };
 
-let admin = user; 
-console.log(user);
-console.log(admin);
-admin.name="Amulya"
-console.log(admin);
-console.log(user);
+// let admin = user; 
+// console.log(user);
+// console.log(admin);
+// admin.name="Amulya"
+// console.log(admin);
+// console.log(user);
