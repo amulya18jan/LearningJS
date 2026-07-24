@@ -95,11 +95,11 @@
 //   }
 // }
 // console.log(superPalin(11))
-let arr =[3,6,1,2,7,8,4,5,6,7,9,10,4];
-let conArr=[];
-for (let i = 0; i < arr.length; i++) {
-    if (!conArr.includes(arr[i])) {
-        conArr.push(arr[i]);
-    }   
-}
-console.log(conArr.sort((a, b)=> a-b));
+// let arr =[3,6,1,2,7,8,4,5,6,7,9,10,4];
+// let conArr=[];
+// for (let i = 0; i < arr.length; i++) {
+//     if (!conArr.includes(arr[i])) {
+//         conArr.push(arr[i]);
+//     }   
+// }
+// console.log(conArr.sort((a, b)=> a-b));
