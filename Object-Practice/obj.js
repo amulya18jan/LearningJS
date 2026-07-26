@@ -142,3 +142,11 @@ clone[key]=user[key];
 clone.name = "Amulya";
 console.log(clone["age"]);
 console.log(user["name"]);
+
+let permission1 = {canView : true}
+let permission2 = {canText : true}
+Object.assign(user,permission1,permission2);
+console.log(user);
+Object.assign(clone,user);
+clone.name = "Amulya";
+console.log(clone);
