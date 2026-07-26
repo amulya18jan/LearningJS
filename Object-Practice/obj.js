@@ -131,22 +131,30 @@
 // admin.name="Amulya"
 // console.log(admin);
 // console.log(user);
-let user = {
-    name: "Amulya Awasthi",
-    age : 26,
-}
-let clone = {};
-for (let key in user){
-clone[key]=user[key];
-}
-clone.name = "Amulya";
-console.log(clone["age"]);
-console.log(user["name"]);
+// let user = {
+//     name: "Amulya Awasthi",
+//     age : 26,
+// }
+// let clone = {};
+// for (let key in user){
+// clone[key]=user[key];
+// }
+// clone.name = "Amulya";
+// console.log(clone["age"]);
+// console.log(user["name"]);
 
-let permission1 = {canView : true}
-let permission2 = {canText : true}
-Object.assign(user,permission1,permission2);
+// let permission1 = {canView : true}
+// let permission2 = {canText : true}
+// Object.assign(user,permission1,permission2);
+// console.log(user);
+// Object.assign(clone,user);
+// clone.name = "Amulya";
+// console.log(clone);
+
+let user = {
+    fruit : "Orange"
+}
+let user1 = user;
+console.log(user1);
+user = null;
 console.log(user);
-Object.assign(clone,user);
-clone.name = "Amulya";
-console.log(clone);
