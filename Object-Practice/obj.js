@@ -131,3 +131,14 @@
 // admin.name="Amulya"
 // console.log(admin);
 // console.log(user);
+let user = {
+    name: "Amulya Awasthi",
+    age : 26,
+}
+let clone = {};
+for (let key in user){
+clone[key]=user[key];
+}
+clone.name = "Amulya";
+console.log(clone["age"]);
+console.log(user["name"]);
