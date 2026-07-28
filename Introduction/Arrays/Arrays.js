@@ -208,6 +208,12 @@ const missingNum =(arr)=> {
     }
     return sum - sumArr;
 }
-console.log(missingNum([1,2,3,5]));
 
+const secondLargest =(arr)=>{
+    
+    for(let i =0;i < arr.length;i++){
+         console.log(arr[i]);
+    }
+}
+console.log(secondLargest([12, 35, 1, 10, 34, 1]));
 
