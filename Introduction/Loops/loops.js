@@ -103,3 +103,9 @@
 //     }   
 // }
 // console.log(conArr.sort((a, b)=> a-b));
+for(let i = 1;i<=100;i=i+10){
+ for(let j =i;j< i+10;j++){
+    process.stdout.write(j + ' ');
+ }
+ process.stdout.write("\n")
+}
