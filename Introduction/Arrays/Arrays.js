@@ -192,3 +192,22 @@
 // let arr =[4,5,2,8,1];
 // const filterRangeInPlace = (arr,a,b)=>arr.filter(value => value >=a && value<=b);
 // console.log(arr,1,4);
+// let arr=[1,2,3,4];
+// let sum =0
+// for(let i=0;i<arr.length+1;i++){
+//      sum= sum + arr[i];
+    
+// }
+// console.log(sum);
+const missingNum =(arr)=> {
+    let n = Number(arr.length +1);
+    let sum = n * (n+1)/2;
+    let sumArr =0;
+    for(let i = 0;i<arr.length;i++){
+     sumArr+=arr[i];
+    }
+    return sum - sumArr;
+}
+console.log(missingNum([1,2,3,5]));
+
+
