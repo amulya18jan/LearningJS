@@ -302,8 +302,20 @@ const SolvingQuestion ={
         }
         return result;
     },
+    printOddValues(arry) {
+     let result = " ";
+        for(let i =0; i<arry.length;i++){
+            if(!(arry[i]%2===0)){
+                result+=arry[i]+" ";
+            }
+        }
+        return result;
+    },
+    printEvenValuesAtEvenIndices(arry) {
+        
+    }
     
 }
-console.log(SolvingQuestion.printOddIndices([12, 35, 1, 10, 34, 1]))
+console.log(SolvingQuestion.printOddValues([12, 35, 1, 10, 34, 1]))
 
 
