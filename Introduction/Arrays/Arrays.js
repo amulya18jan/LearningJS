@@ -239,8 +239,21 @@ const SolvingQuestion ={
         result+=arry[i] + " "
         }
         return result; 
+    },
+
+    printAllNumberSum(arry){
+    let sum =0;
+     for(let i = 0; i<arry.length;i++){
+        sum+=arry[i];
+     }
+     return sum;
+    },
+    printEven(arry){
+        let result =" ";
+        
     }
+    
 }
-console.log(SolvingQuestion.printAllNumbersInReserve([12, 35, 1, 10, 34, 1]))
+console.log(SolvingQuestion.printAllNumberSum([12, 35, 1, 10, 34, 1]))
 
 
