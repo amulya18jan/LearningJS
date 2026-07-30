@@ -199,15 +199,15 @@
     
 // }
 // console.log(sum);
-const missingNum =(arr)=> {
-    let n = Number(arr.length +1);
-    let sum = n * (n+1)/2;
-    let sumArr =0;
-    for(let i = 0;i<arr.length;i++){
-     sumArr+=arr[i];
-    }
-    return sum - sumArr;
-}
+// const missingNum =(arr)=> {
+//     let n = Number(arr.length +1);
+//     let sum = n * (n+1)/2;
+//     let sumArr =0;
+//     for(let i = 0;i<arr.length;i++){
+//      sumArr+=arr[i];
+//     }
+//     return sum - sumArr;
+// }
 
 // const secondLargest =(arr)=>{
 //     let max =0;
@@ -217,5 +217,21 @@ const missingNum =(arr)=> {
 //     }
 // }
 // console.log(secondLargest([12, 35, 1, 10, 34, 1]));
+// Do these until they feel natural:
+// 1. Print all elements
+// 2. Print all elements in reverse
+// 3. Print sum of all elements
+// 4. Print only even numbers
+// 5. Print elements greater than 5
+const SolvingQuestion ={
+    printAllNumbers(arry){
+        let result = " "
+    for(let i=0;i<arry.length;i++){
+       result += arry[i]+ " ";
+    }
+   return result;
+    }
+}
+console.log(SolvingQuestion.printAllNumbers([12, 35, 1, 10, 34, 1]))
 
 
