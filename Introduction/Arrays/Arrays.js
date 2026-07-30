@@ -230,8 +230,17 @@ const SolvingQuestion ={
        result += arry[i]+ " ";
     }
    return result;
+    },
+
+    printAllNumbersInReserve(arry){
+        let result = " "
+        let size = Number(arry.length -1)
+        for(let i = size; i >=0;i--){
+        result+=arry[i] + " "
+        }
+        return result; 
     }
 }
-console.log(SolvingQuestion.printAllNumbers([12, 35, 1, 10, 34, 1]))
+console.log(SolvingQuestion.printAllNumbersInReserve([12, 35, 1, 10, 34, 1]))
 
 
