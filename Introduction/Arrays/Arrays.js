@@ -312,10 +312,16 @@ const SolvingQuestion ={
         return result;
     },
     printEvenValuesAtEvenIndices(arry) {
-        
+        let result =" ";
+        for(let i = 0; i<arry.length;i++){
+            if((arry[i]%2===0)&&(i%2===0)){
+             result+=arry[i]+ " ";
+            }
+        }
+        return result;
     }
     
 }
-console.log(SolvingQuestion.printOddValues([12, 35, 1, 10, 34, 1]))
+console.log(SolvingQuestion.printEvenValuesAtEvenIndices([12, 35, 1, 10, 34, 1]))
 
 
