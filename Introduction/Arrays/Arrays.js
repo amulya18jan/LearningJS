@@ -292,9 +292,18 @@ const SolvingQuestion ={
             }
         }
         return  result;
-    }
+    },
+     printOddIndices(arry) {
+        let result = " ";
+        for(let i =0; i<arry.length;i++){
+            if(!(i%2===0)){
+                result+=arry[i]+" ";
+            }
+        }
+        return result;
+    },
     
 }
-console.log(SolvingQuestion.printEvenIndices([12, 35, 1, 10, 34, 1]))
+console.log(SolvingQuestion.printOddIndices([12, 35, 1, 10, 34, 1]))
 
 
