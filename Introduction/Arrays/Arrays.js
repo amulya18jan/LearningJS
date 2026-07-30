@@ -256,9 +256,45 @@ const SolvingQuestion ={
             }
         }
     return result;
+    },
+    printGreater5(arry){
+        let result = " ";
+        for(let i =0;i<arry.length;i++){
+            if(arry[i]>5){
+                result=result + arry[i] + " ";
+            }
+        }
+        return result;
+    },
+      printBetween10And30(arry) {
+        let result = " ";
+        for(let i =0;i<arry.length;i++){
+            if(arry[i]>10 && arry[i]<30){
+                result=result + arry[i] + " ";
+            }
+        }
+        return result; 
+    },
+    printDivisibleBy3(arry) {
+         let result = " ";
+        for(let i =0;i<arry.length;i++){
+            if(arry[i]%3===0){
+                result=result + arry[i] + " ";
+            }
+        }
+        return result; 
+    },
+    printEvenIndices(arry) {
+        let result =" ";
+        for(let i =0;i < arry.length;i++){
+            if(i%2===0){
+                result+=arry[i]+" "
+            }
+        }
+        return  result;
     }
     
 }
-console.log(SolvingQuestion.printEven([12, 35, 1, 10, 34, 1]))
+console.log(SolvingQuestion.printEvenIndices([12, 35, 1, 10, 34, 1]))
 
 
