@@ -250,10 +250,15 @@ const SolvingQuestion ={
     },
     printEven(arry){
         let result =" ";
-        
+        for(let i=0;i<arry.length;i++){
+            if(arry[i]%2===0){
+                result +=arry[i] + " ";
+            }
+        }
+    return result;
     }
     
 }
-console.log(SolvingQuestion.printAllNumberSum([12, 35, 1, 10, 34, 1]))
+console.log(SolvingQuestion.printEven([12, 35, 1, 10, 34, 1]))
 
 
