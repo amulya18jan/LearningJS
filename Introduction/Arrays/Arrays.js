@@ -319,9 +319,33 @@ const SolvingQuestion ={
             }
         }
         return result;
+    },
+    sumOfEvenIndices(arry) {
+        let sum = 0;
+        for(let i=0;i<arry.length;i++){
+            if(i%2===0){
+                sum+=arry[i];
+            }
+        }
+        return sum;
+    },
+    findSecondLargest(arry) {
+    let max =0;
+    let SecondLarge =0;
+    for(let i =0; i<arry.length;i++){
+        let current = arry[i];
+        if(current>max){
+            SecondLarge=max;
+            max =current;
+        }
+        else if(current>SecondLarge && current!==max){
+            SecondLarge=current;
+        }
     }
+    return SecondLarge;
+}
     
 }
-console.log(SolvingQuestion.printEvenValuesAtEvenIndices([12, 35, 1, 10, 34, 1]))
+console.log(SolvingQuestion.findSecondLargest([12, 35, 1, 10, 34, 1]))
 
 
