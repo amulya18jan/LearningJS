@@ -199,31 +199,23 @@
     
 // }
 // console.log(sum);
-const missingNum =(arr)=> {
-    let n = Number(arr.length +1);
-    let sum = n * (n+1)/2;
-    let sumArr =0;
-    for(let i = 0;i<arr.length;i++){
-     sumArr+=arr[i];
-    }
-    return sum - sumArr;
-}
+// const missingNum =(arr)=> {
+//     let n = Number(arr.length +1);
+//     let sum = n * (n+1)/2;
+//     let sumArr =0;
+//     for(let i = 0;i<arr.length;i++){
+//      sumArr+=arr[i];
+//     }
+//     return sum - sumArr;
+// }
 
-const secondLargest =(arr)=>{
-    let max =0;
-    let SecondLarge=0;
-    for(let i =0;i < arr.length;i++){
-        max =arr[i];
-         for(let j=0;j<i;j++){
-            if(arr[j]>arr[i]){
-            max = arr[j];
-            
-            }
-         }
-       SecondLarge=arr[i];
-    }
-    return SecondLarge;
-}
-console.log(secondLargest([12, 35, 1, 10, 34, 1]));
+// const secondLargest =(arr)=>{
+//     let max =0;
+//     let SecondLarge=0;
+//     for(let i =0;i < arr.length;i++){
+//          console.log(arr[i]);
+//     }
+// }
+// console.log(secondLargest([12, 35, 1, 10, 34, 1]));
 
 
