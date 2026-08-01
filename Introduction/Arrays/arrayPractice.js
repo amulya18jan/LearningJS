@@ -19,6 +19,16 @@ const Arrays = {
             }
         }
         return result;
+    },
+    nonPrimeInArray(arr){
+        let result = []
+        for(let i =0; i<arr.length;i++){
+            if( !(this.isPrime(arr[i]))){
+                result.push(arr[i]);
+            }
+        }
+        return result;
     }
 }
 console.log(Arrays.primeInArray([3,2,5,8,12,11]));
+console.log(Arrays.nonPrimeInArray([3,2,5,8,12,11]));
