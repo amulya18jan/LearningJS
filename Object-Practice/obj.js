@@ -154,7 +154,12 @@
 let user = {
     fruit : "Orange"
 }
-let user1 = user;
-console.log(user1);
-user = null;
-console.log(user);
+function sayHi(){
+    return "Hii";
+}
+user.sayHi =sayHi;
+console.log(user.sayHi()+ " ");
+// let user1 = user;
+// console.log(user1);
+// user = null;
+// console.log(user);
