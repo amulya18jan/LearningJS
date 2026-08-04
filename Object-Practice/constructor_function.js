@@ -11,8 +11,16 @@
 // user = new User("Aditi");
 // console.log(user.name);
 // console.log(user);
-function User(name){
-    console.log(!(new.target));
+// function User(name){
+//     console.log(!(new.target));
+// }
+// User();
+// new User();
+function User (name){
+    if(!(new.target)){
+        return new User(name);
+    }
+    this.name =name;
 }
-User();
-new User();
+let Amulya =User("Amulya");
+console.log(Amulya);
