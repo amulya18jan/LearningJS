@@ -49,7 +49,7 @@ this.read =function(){
 }
 
 }
-let accumulator = new Accumulator(0); // initial value 1
+let accumulator = new Accumulator(1); // initial value 1
 
 accumulator.read(); // adds the user-entered value
 accumulator.read(); // adds the user-entered value
