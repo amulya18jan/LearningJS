@@ -16,11 +16,12 @@
 // }
 // User();
 // new User();
-function User (name){
+function User(name){
     if(!(new.target)){
         return new User(name);
     }
     this.name =name;
 }
-let Amulya =User("Amulya");
+let Amulya = User("King");
 console.log(Amulya);
+console.log(Amulya.name);
