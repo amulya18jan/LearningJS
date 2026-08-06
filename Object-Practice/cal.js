@@ -10,22 +10,22 @@ let calculator = {
 calculator.read();
 alert( calculator.sum() );
 alert( calculator.mul() );`);
-let calculator = {
-  read(){
-    this.val1 = Number(prompt("Give me the first number"));
-    this.val2= Number(prompt("Give me the second number"));
+// let calculator = {
+//   read(){
+//     this.val1 = Number(prompt("Give me the first number"));
+//     this.val2= Number(prompt("Give me the second number"));
     
-  },
-  sum(){
-    let Add =this.val1 + this.val2;
-    return Add;
-  },
-  mul(){
-   let multi = this.val1*this.val2;
-   return multi;
-  }
-};
+//   },
+//   sum(){
+//     let Add =this.val1 + this.val2;
+//     return Add;
+//   },
+//   mul(){
+//    let multi = this.val1*this.val2;
+//    return multi;
+//   }
+// };
 
-calculator.read();
-alert( calculator.sum() );
-alert( calculator.mul() );
+// calculator.read();
+// alert( calculator.sum() );
+// alert( calculator.mul() );
